@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shree Hari Interior Decore</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <div id="content" style="display: none;">
+    <header>
+      <div class="logo" style="font-family: 'Cinzel Decorative', cursive;">Shree Hari Interior</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#slider">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <h1>Elegant Spaces, Timeless Designs</h1>
+      <p>Transforming homes with luxurious and bespoke interior decor solutions.</p>
+    </section>
+
+    <section class="products" id="products">
+      <h2>Our Collection</h2>
+      <div class="filter-bar">
+        <select id="categoryFilter">
+          <option value="all">All</option>
+          <option value="sofa">Sofa</option>
+          <option value="bed">Bed</option>
+          <option value="table">Table</option>
+        </select>
+      </div>
+      <div class="product-grid">
+        <div class="product-card" data-category="sofa">
+          <img src="mordensofa.jpg" alt="Modern Sofa">
+          <h3>Modern Sofa</h3>
+          <p>₹18,000</p>
+          <button>View Details</button>
+        </div>
+        <div class="product-card" data-category="bed">
+          <img src="luxury.jpg" alt="Luxury Bed">
+          <h3>Luxury Bed</h3>
+          <p>₹35,000</p>
+          <button>View Details</button>
+        </div>
+        <div class="product-card" data-category="table">
+          <img src="table.jpg" alt="Wooden Table">
+          <h3>Wooden Table</h3>
+          <p>₹8,500</p>
+          <button>View Details</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider" id="slider">
+      <h2>Gallery</h2>
+      <div class="slider-container">
+        <div class="slide active">
+          <img src="gallary1.jpg" alt="Interior 1">
+        </div>
+        <div class="slide">
+          <img src="gallary2.jpg" alt="Interior 2">
+        </div>
+        <div class="slide">
+          <img src="gallary3.jpg" alt="Interior 3">
+        </div>
+        <div class="slide">
+          <img src="gallary4.jpg" alt="Interior 3">
+        </div>
+        <button class="prev">❮</button>
+        <button class="next">❯</button>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Clients Say</h2>
+      <p>“Shree Hari Interior made our dream home a reality! Their attention to detail is unmatched.”</p>
+      <p>“Stunning designs and top-quality materials. We couldn’t be happier with our interiors!”</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Shree Hari Interior Decore. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
